@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teki Solutions | Freelance Web Developer</title>
+  <!-- Favicon -->
+  <link rel="icon" href="/tekisolutions_fav_icon.png" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom pt-2 pb-2">
+    <a class="navbar-brand" href="#">
+      <img src="tekisolutions_b-50.png" alt="Logo" style="height: 124px; z-index: 1000 !important;">
+    </a>
+  </nav>
+  <!-- <section class="arrow_box"></section> -->
+  <section class="teki_wallpaper">
+    <div class="container-fluid pt-5">
+      <div class="row pt-5">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-4 offset-md-2 text-left text-white mt-5 teki-form p-5">
+          <h1>Teki Solutions</h1>
+          <p>Founded by <a href="https://khayasoftware.github.io">Khaya Khumalo</a>, an experienced Freelance Web
+            Developer</p>
+          <h3>Transform Your Business</h3>
+          <p>Professional web design, development, and SEO services to elevate your online presence.</p>
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" class="form-control teki-text-box" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control teki-text-box" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control teki-text-box" id="message" rows="3" placeholder="Enter your message"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="triangle2"></div>
+  <div class="triangle"></div>
+  <div class="floating-div"></div>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const mailtoLink = `mailto:khaya.khumalo93@gmail.com?subject=Contact%20Form%20Submission&body=Name%3A%20${encodeURIComponent(name)}%0AEmail%3A%20${encodeURIComponent(email)}%0AMessage%3A%20${encodeURIComponent(message)}`;
+      window.location.href = mailtoLink;
+    });
+  </script>
+</body>
+
+</html>
