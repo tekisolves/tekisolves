@@ -10,6 +10,8 @@
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
+  <!-- reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -18,7 +20,6 @@
       <img src="tekisolutions_b-50.png" alt="Logo" style="height: 124px; z-index: 1000 !important;">
     </a>
   </nav>
-  <!-- <section class="arrow_box"></section> -->
   <section class="teki_wallpaper">
     <div class="container-fluid pt-5">
       <div class="row pt-5">
@@ -28,18 +29,21 @@
             Developer</p>
           <h3>Transform Your Business</h3>
           <p>Professional web design, development, and SEO services to elevate your online presence.</p>
-          <form id="contactForm">
+          <form action="https://formspree.io/f/xbjnvagd" method="post" id="contactForm">
             <div class="form-group">
-              <input type="text" class="form-control teki-text-box" id="name" placeholder="Enter your name" required>
+              <input name="name" type="text" class="form-control teki-text-box" id="name" placeholder="Enter your name"
+                required>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control teki-text-box" id="email" placeholder="Enter your email" required>
+              <input name="email" type="email" class="form-control teki-text-box" id="email"
+                placeholder="Enter your email" required>
             </div>
             <div class="form-group">
-              <textarea class="form-control teki-text-box" id="message" rows="3" placeholder="Enter your message"
-                required></textarea>
+              <textarea name="message" class="form-control teki-text-box" id="message" rows="5"
+                placeholder="Enter your message" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div> <!-- Add this line for reCAPTCHA -->
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
           </form>
         </div>
       </div>
@@ -49,21 +53,13 @@
   <div class="triangle2"></div>
   <div class="triangle"></div>
   <div class="floating-div"></div>
-  
+
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', function (event) {
-      event.preventDefault();
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-      const mailtoLink = `mailto:khaya.khumalo93@gmail.com?subject=Contact%20Form%20Submission&body=Name%3A%20${encodeURIComponent(name)}%0AEmail%3A%20${encodeURIComponent(email)}%0AMessage%3A%20${encodeURIComponent(message)}`;
-      window.location.href = mailtoLink;
-    });
-  </script>
+
+
 </body>
 
 </html>
