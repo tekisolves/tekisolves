@@ -19,7 +19,23 @@
   <link rel="icon" href="/fav_icon.png" type="image/x-icon">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
-  <script src="https://www.google.com/recaptcha/api.js?render=6Lcdl_ApAAAAABYlGYfhJ4y31vg2t1xuyN8xqpjF"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LcofvEpAAAAACZEsV3AIM_WyqQWlCWBgp1C2EcS"></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById('contactForm').submit();
+    }
+
+    grecaptcha.ready(function () {
+      document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        grecaptcha.execute('6LcofvEpAAAAACZEsV3AIM_WyqQWlCWBgp1C2EcS', { action: 'submit' }).then(function (token) {
+          var recaptchaResponse = document.getElementById('g-recaptcha-response');
+          recaptchaResponse.value = token;
+          document.getElementById('contactForm').submit();
+        });
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -52,7 +68,7 @@
                 placeholder="Enter your message" required></textarea>
             </div>
             <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-            <button type="submit" class="btn btn-primary">Get a Free Quote</button>
+            <button type="submit" class="btn btn-primary g-recaptcha" data-sitekey="6LcofvEpAAAAACZEsV3AIM_WyqQWlCWBgp1C2EcS" data-callback='onSubmit'>Get a Free Quote</button>
           </form>
         </div>
       </div>
@@ -72,4 +88,7 @@
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
