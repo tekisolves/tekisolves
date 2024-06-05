@@ -251,3 +251,9 @@ a:hover, a:active{
   border-left: 13.675em solid transparent;
   border-bottom: 13.675em solid #7df2e5;
 }
+
+.thank_you_teki{
+  background-color: #000 !important;
+  height: 98vh !important;
+  background: url('teki_thank_you.png') no-repeat center center;
+}
