@@ -47,7 +47,7 @@
   <section class="teki_wallpaper" id="contact">
     <div class="container-fluid pt-5">
       <div class="row pt-5">
-        <div class="col-12 col-md-6 col-lg-4 col-xl-4 offset-md-2 text-left text-white mt-5 teki-form p-5">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-4 offset-md-2 text-left text-white teki-form p-5">
           <h1>Teki Solutions</h1>
           <p>Experienced Freelance Web Developer & Digital Artist - Founded by Khaya Khumalo (<a
               href="https://khayasoftware.github.io">Portfolio</a>)</p>
@@ -64,8 +64,13 @@
                 placeholder="Enter your email" required>
             </div>
             <div class="form-group">
-              <textarea name="message" class="form-control teki-text-box" id="message" rows="5"
+              <textarea name="message" class="form-control teki-text-box" id="message" rows="4"
                 placeholder="Enter your message" required></textarea>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="consent" name="consent" required>
+              <label for="consent">I consent to having Teki Solutions collect my data via this form.</label>
+              <p><a href="/privacy-policy.html" target="_blank">View our Privacy Policy</a></p>
             </div>
             <div class="g-recaptcha" data-sitekey="6LfRgvEpAAAAAFGfzTbkAOGk4rU5T4K1rP5dMYC9"></div> <!-- replace with your recaptcha SITE key not secret key -->
             <button type="submit" class="btn btn-primary mt-3">Get a Free Quote</button>
