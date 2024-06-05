@@ -19,8 +19,8 @@
   <link rel="icon" href="/fav_icon.png" type="image/x-icon">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
-  <script src="https://www.google.com/recaptcha/api.js?render=6LcofvEpAAAAACZEsV3AIM_WyqQWlCWBgp1C2EcS"></script>
-  <script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <!-- <script>
     function onSubmit(token) {
       document.getElementById('contactForm').submit();
     }
@@ -35,7 +35,7 @@
         });
       });
     });
-  </script>
+  </script> -->
 </head>
 
 <body>
@@ -67,8 +67,8 @@
               <textarea name="message" class="form-control teki-text-box" id="message" rows="8"
                 placeholder="Enter your message" required></textarea>
             </div>
-            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-            <button type="submit" class="btn btn-primary g-recaptcha" data-sitekey="6LcofvEpAAAAACZEsV3AIM_WyqQWlCWBgp1C2EcS" data-callback='onSubmit'>Get a Free Quote</button>
+            <div class="g-recaptcha" data-sitekey="6LfRgvEpAAAAAFGfzTbkAOGk4rU5T4K1rP5dMYC9"></div> <!-- replace with your recaptcha SITE key not secret key -->
+            <button type="submit" class="btn btn-primary">Get a Free Quote</button>
           </form>
         </div>
       </div>
