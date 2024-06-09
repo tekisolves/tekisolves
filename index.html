@@ -1,99 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Home
+---
 
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8NWH600XP9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-8NWH600XP9');
-  </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teki Solutions | Web Design, Development, SEO, Digital Art & Tutoring</title>
-  <meta name="description"
-    content="Teki Solutions offers professional web design, development, SEO, digital art creation, and personalized tutoring services to elevate your brand and boost your skills.">
-  <link rel="icon" href="/fav_icon.png" type="image/x-icon">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <!-- <script>
-    function onSubmit(token) {
-      document.getElementById('contactForm').submit();
-    }
-
-    grecaptcha.ready(function () {
-      document.getElementById('contactForm').addEventListener('submit', function (event) {
-        event.preventDefault();
-        grecaptcha.execute('6LcofvEpAAAAACZEsV3AIM_WyqQWlCWBgp1C2EcS', { action: 'submit' }).then(function (token) {
-          var recaptchaResponse = document.getElementById('g-recaptcha-response');
-          recaptchaResponse.value = token;
-          document.getElementById('contactForm').submit();
-        });
-      });
-    });
-  </script> -->
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom pt-2 pb-2">
-    <a class="navbar-brand" href="#">
-      <img src="tekisolutions_b-50.png" alt="Teki Solutions Logo" style="height: 124px; z-index: 1000 !important;">
-    </a>
-  </nav>
-  <section class="teki_wallpaper" id="contact">
-    <div class="container-fluid pt-5">
-      <div class="row pt-5">
-        <div class="col-12 col-md-6 col-lg-4 col-xl-4 offset-md-2 text-left text-white teki-form p-5">
-          <h1>Teki Solutions</h1>
-          <p>Experienced Freelance Web Developer & Digital Artist - Founded by Khaya Khumalo (<a
-              href="https://khayasoftware.github.io">Portfolio</a>)</p>
-          <h3>Transform Your Business Online</h3>
-          <p>We offer professional web design, development, SEO services to elevate your brand presence, and create
-            stunning digital art.</p>
-          <form action="https://formspree.io/f/xbjnvagd" method="POST" id="contactForm">
-            <div class="form-group">
-              <input name="name" type="text" class="form-control teki-text-box" id="name" placeholder="Enter your name"
-                required>
-            </div>
-            <div class="form-group">
-              <input name="email" type="email" class="form-control teki-text-box" id="email"
-                placeholder="Enter your email" required>
-            </div>
-            <div class="form-group">
-              <textarea name="message" class="form-control teki-text-box" id="message" rows="4"
-                placeholder="Enter your message" required></textarea>
-            </div>
-            <div class="form-group">
-              <input type="checkbox" id="consent" name="consent" required>
-              <label for="consent">I consent to having Teki Solutions collect my data via this form.</label>
-              <p><a href="/privacy-policy.html" target="_blank">View our Privacy Policy</a></p>
-            </div>
-            <div class="g-recaptcha" data-sitekey="6LfRgvEpAAAAAFGfzTbkAOGk4rU5T4K1rP5dMYC9"></div> <!-- replace with your recaptcha SITE key not secret key -->
-            <button type="submit" class="btn btn-primary mt-3">Get a Free Quote</button>
-          </form>
-        </div>
+<section class="teki_wallpaper" id="contact">
+  <div class="container pt-5 pb-5">
+    <div class="row pt-5 pb-5">
+      <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 text-left text-white teki-form p-5">
+        <h1>Teki Solutions</h1>
+        <p>Experienced Freelance Web Developer & Digital Artist - Founded by Khaya Khumalo (<a
+            href="https://khayasoftware.github.io">Portfolio</a>)</p>
+        <h3>Transform Your Business Online</h3>
+        <p>We offer professional web design, development, SEO services to elevate your brand presence, and create
+          stunning digital art.</p>
+        <form action="https://formspree.io/f/xbjnvagd" method="POST" id="contactForm">
+          <div class="form-group">
+            <input name="name" type="text" class="form-control teki-text-box" id="name" placeholder="Enter your name"
+              required>
+          </div>
+          <div class="form-group">
+            <input name="email" type="email" class="form-control teki-text-box" id="email"
+              placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <textarea name="message" class="form-control teki-text-box" id="message" rows="4"
+              placeholder="Enter your message" required></textarea>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">I consent to having Teki Solutions collect my data via this form.</label>
+            <p><a href="/privacy-policy.html" target="_blank">View our Privacy Policy</a></p>
+          </div>
+          <div class="g-recaptcha" data-sitekey="6LfRgvEpAAAAAFGfzTbkAOGk4rU5T4K1rP5dMYC9"></div>
+          <!-- replace with your recaptcha SITE key not secret key -->
+          <button type="submit" class="btn btn-primary mt-3">Get a Free Quote</button>
+        </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- <section class="tutoring-section">
-    <h2>Boost Your Skills with Teki Solutions Tutoring</h2>
-    <p>We offer personalized tutoring sessions for web development, coding languages, and design software. Whether
-      you're a beginner or looking to advance your skills, we can help you achieve your goals.</p>
-    <a href="#contact" class="btn btn-secondary">Learn More About Tutoring</a>
-  </section> -->
+<section class="arrow_box p-2"></section>
 
-  <div class="triangle2"></div>
-  <div class="triangle"></div>
-  <div class="floating-div"></div>
+<section class="blog-posts arrow_box_white pt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-xs-12 col-lg-12">
+        <h1 class="big-title pb-4">Blog</h1>
+      </div>
+      {% assign top_posts = site.posts | slice: 0, 3 %}
+      {% for post in top_posts %}
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="post post-card p-5 mb-4">
+          <h3>
+            <a href="{{ post.url }}" class="post-title-tooltip" title="{{ post.title }}">
+              {{ post.title | truncate: 30 }} ...
+            </a>
+          </h3>
+          <p>{{ post.date | date: "%B %d, %Y" }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+<div class="triangle2"></div>
+<div class="triangle"></div>
+<div class="floating-div"></div>
