@@ -37,7 +37,7 @@ At **Teki Solutions**, we blend technical expertise with creative vision to crea
 
 ### Ready to elevate your online presence?
 
-[Contact Teki Solutions](https://tekisolves.github.io/tekisolves) today for a consultation and discover how we can build a custom website that drives your success.
+[Contact Teki Solutions](https://tekisolves.github.io/) today for a consultation and discover how we can build a custom website that drives your success.
 
 ---
 
