@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Anime Alchemy: Tech Inspo for the Modern Geek"
-date: 2024-06-01
+date: 2024-06-12
 categories: [Anime, Technology, Inspiration]
 tags: [Anime, Technology, Innovation, Teki Solutions]
 author: Khaya Khumalo

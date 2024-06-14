@@ -480,3 +480,15 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+.blue-ghost{
+  background-color: transparent !important;
+  border: solid 4px #000;
+  color: #000;
+}
+
+.blue-ghost:hover{
+  background-color: #7851A9;
+  color: #fff;
+  border: solid 4px #fff;
+}

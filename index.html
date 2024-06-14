@@ -46,9 +46,10 @@ title: Home
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-xs-12 col-lg-12">
-        <h1 class="big-title pb-4">Blog</h1>
+        <h1 class="big-title pb-4">Latest Posts</h1>
       </div>
-      {% assign top_posts = site.posts | slice: 0, 3 %}
+      {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+      {% assign top_posts = sorted_posts | slice: 0, 3 %}
       {% for post in top_posts %}
       <div class="col-sm-12 col-md-6 col-lg-4">
         <div class="post post-card p-5 mb-4">
@@ -61,6 +62,11 @@ title: Home
         </div>
       </div>
       {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-12 col-lg-12 text-center">
+        <a href="blog.hmtl" class="blue-ghost p-5">View More</a>
+      </div>
     </div>
   </div>
 </section>
