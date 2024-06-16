@@ -1,0 +1,6 @@
+title: Teki Solves
+description: Web Design, Development, SEO, Digital Art & Tutoring
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://tekisolves.github.io/" # the base hostname & protocol for your site
+paginate: 9
+paginate_path: "/blog/page:num/"
