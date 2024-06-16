@@ -264,6 +264,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-paginate
   webrick
 
 BUNDLED WITH

@@ -185,7 +185,7 @@ a:active {
 
 .arrow_box {
   position: relative;
-  background: #000;
+  background-color: #000;
   border-bottom: 4px solid #DAA520;
   z-index: 1;
 }
@@ -482,13 +482,34 @@ body {
 }
 
 .blue-ghost{
-  background-color: transparent !important;
+  font-family: "wmxyo", "Arial Bold", Gadget, sans-serif;
+  background-color: transparent;
   border: solid 4px #000;
   color: #000;
+  font-weight: bold;
 }
 
 .blue-ghost:hover{
-  background-color: #7851A9;
+  background-color: #000;
   color: #fff;
   border: solid 4px #fff;
+}
+
+.blog-posts-full{
+  background-color: #000;
+  /* min-height: 95vh; */
+}
+
+.black-diamond{
+  background-image: url('tekisolutions_pattern.png');
+  background-position: top right;
+}
+
+.navbar{
+  z-index: 2;
+}
+
+.blog-board{
+  box-shadow: 23px 22px 0px -5px rgba(217, 165, 32, 0.85), -23px -22px 0px -5px rgba(0, 178, 116, 0.851);
+  color: #000;
 }

@@ -1,0 +1,50 @@
+---
+layout: default
+title: Blog
+pagination:
+enabled: true
+---
+
+<section class="arrow_box p-2"></section>
+
+<section class="blog-posts-full arrow_box black-diamond pt-4 pb-5">
+  <div class="container">
+    <div class="row p-5">
+      <div class="col-md-12 col-xs-12 col-lg-12">
+        <h1 class="big-title pb-4">Blog Posts</h1>
+      </div>
+    </div>
+    <div class="row p-5 blog-board">
+      {% assign sorted_posts = site.posts %}
+      {% for post in sorted_posts %}
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="post post-card p-5 mb-4">
+          <h3>
+            <a href="{{ post.url }}" class="post-title-tooltip" title="{{ post.title }}">
+              {{ post.title | truncate: 30 }} ...
+            </a>
+          </h3>
+          <p>{{ post.date | date: "%B %d, %Y" }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- <div class="row p-5">
+      <div class="col-xs-12 col-md-12 col-lg-12 text-center">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="blue-ghost p-3">Previous</a>
+        {% endif %}
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="blue-ghost p-3">Next</a>
+        {% endif %}
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<!-- <section class="arrow_box black-diamond p-2"></section> -->
+
+<div class="triangle2"></div>
+<div class="triangle"></div>
+<div class="floating-div"></div>

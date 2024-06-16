@@ -26,11 +26,11 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom pt-2 pb-2">
-        <a class="navbar-brand" href="{{ site.baseurl }}">
+        <a class="navbar-brand" href="{{ site.baseurl }}/index">
             <img src="{{ site.baseurl }}/tekisolutions_b-50.png" alt="Teki Solves Logo"
                 style="height: 124px; z-index: 1000 !important;">
         </a>
-        <!-- <a class="nav-link ml-auto" href="{{ site.baseurl }}/blog">Blog</a> -->
+        <a class="nav-link ml-auto" href="{{ site.baseurl }}/blog">Blog</a>
     </nav>
 
     {{ content }}
@@ -42,7 +42,7 @@
                     <p>&copy; {{ site.time | date: "%Y" }} Teki Solves. All rights reserved.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <a href="{{ site.baseurl }}">
+                    <a href="{{ site.baseurl }}/index">
                         <img src="{{ site.baseurl }}/tekisolutions_b-50.png" alt="Footer Logo" class="footer-image"
                             style="height: 124px; z-index: 1000 !important;">
                     </a>
