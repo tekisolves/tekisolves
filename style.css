@@ -513,3 +513,7 @@ body {
   box-shadow: 23px 22px 0px -5px rgba(217, 165, 32, 0.85), -23px -22px 0px -5px rgba(0, 178, 116, 0.851);
   color: #000;
 }
+
+.post-card{
+  min-height: 280px !important;
+}

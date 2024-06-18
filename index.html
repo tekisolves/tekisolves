@@ -52,7 +52,7 @@ title: Home
       {% assign top_posts = sorted_posts | slice: 0, 3 %}
       {% for post in top_posts %}
       <div class="col-sm-12 col-md-6 col-lg-4">
-        <div class="post post-card p-5 mb-4">
+        <div class="post post-card p-5 mb-4 text-left">
           <h3>
             <a href="{{ site.baseurl }}{{ post.url }}" class="post-title-tooltip" title="{{ post.title }}">
               {{ post.title | truncate: 30 }} ...

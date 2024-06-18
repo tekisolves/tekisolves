@@ -14,11 +14,11 @@ enabled: true
         <h1 class="big-title pb-4">Blog Posts</h1>
       </div>
     </div>
-    <div class="row p-5 blog-board">
+    <div class="row p-5 blog-board text-left">
       {% assign sorted_posts = site.posts %}
       {% for post in sorted_posts %}
       <div class="col-sm-12 col-md-6 col-lg-4">
-        <div class="post post-card p-5 mb-4">
+        <div class="post post-card p-5 mb-4 text-left">
           <h3>
             <a href="{{ post.url }}" class="post-title-tooltip" title="{{ post.title }}">
               {{ post.title | truncate: 30 }} ...
